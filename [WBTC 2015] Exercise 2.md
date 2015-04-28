@@ -1,6 +1,6 @@
 # wbtc
 
-2. RDF and SPARQL
+2 - RDF and SPARQL
 
 http://www.w3.org/TR/turtle/#language-features
 
