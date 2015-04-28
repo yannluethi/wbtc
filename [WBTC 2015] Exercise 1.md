@@ -22,6 +22,4 @@ Furthermore the .info means that the Site contains Informative Internet resource
 That’s why I call these IRI's future proof. 
 
 Linked Data
-The web allows us to put text, pictures, videos and documents on the same page. It’s also possible to refer from one webpage to another page through links.
-But it needs a bit more to make the computer understanding the links and the information which comes with it. To achieve the comprehension, data has to be structured.
-This means that the data must contain properties which explain the data to the computer so that he can generate information from it. With this approach it's possible that computes will answer your questions on their own based on linked data.
+The web allows us to put text, pictures, videos and documents on the same page. It’s also possible to refer from one webpage to another page through links. But it needs a bit more to make the computer understanding the links and the information which comes with it. To achieve the comprehension, data has to be structured. This means that the data must contain properties which explain the data to the computer so that he can generate information from it. With this approach it's possible that computes will answer your questions on their own based on linked data.
