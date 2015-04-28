@@ -1,6 +1,6 @@
 # wbtc
 
-1. Designing IRI’s and ELI5 Linked Data
+1 - Designing IRI’s and ELI5 Linked Data
 
 IRI’s
 
