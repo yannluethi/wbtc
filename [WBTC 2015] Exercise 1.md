@@ -3,7 +3,6 @@
 1. Designing IRI’s and ELI5 Linked Data
 
 IRI’s:
-
 http://www.yannlüthi.info/aboutme/
 
 http://www.yannlüthi.info/aboutme/workexperience/
