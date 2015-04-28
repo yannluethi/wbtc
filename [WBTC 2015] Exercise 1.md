@@ -4,19 +4,19 @@
 
 IRI’s
 
-http://www.yannlüthi.info/aboutme/
+http://yannlüthi.info/aboutme/
 
-http://www.yannlüthi.info/aboutme/workexperience/
-http://www.yannlüthi.info/aboutme/workexperience/lwb/
-http://www.yannlüthi.info/aboutme/workexperience/bkw/
+http://yannlüthi.info/aboutme/workexperience/
+http://yannlüthi.info/aboutme/workexperience/lwb/
+http://yannlüthi.info/aboutme/workexperience/bkw/
 
-http://www.yannlüthi.info/aboutme/education/
-http://www.yannlüthi.info/aboutme/education/bfh/
-http://www.yannlüthi.info/aboutme/education/lwb/
+http://yannlüthi.info/aboutme/education/
+http://yannlüthi.info/aboutme/education/bfh/
+http://yannlüthi.info/aboutme/education/lwb/
 
-http://www.yannlüthi.info/aboutme/interests/
-http://www.yannlüthi.info/aboutme/interests/football/
-http://www.yannlüthi.info/aboutme/interests/music/
+http://yannlüthi.info/aboutme/interests/
+http://yannlüthi.info/aboutme/interests/football/
+http://yannlüthi.info/aboutme/interests/music/
 
 This IRI’s are unique. So they are simple to understand. 
 Furthermore the .info means that the Site contains Informative Internet resources which perfectly fits to my website.
