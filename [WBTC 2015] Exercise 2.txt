@@ -4,7 +4,12 @@
 
 I used the Turtle Syntax to create RDF triple statemanents.
 
-@prefix
+@prefix rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+@prefix foaf : <http://xlmns.com/foaf/0.1/> 
+@prefix friends : <http://xmlns.com/foaf/0.1/knows> 
+@prefix education : <http://xmlns/education/1.0/> 
+@prefix workexperience : <http://xmlns/foaf/0.1/work> 
+
 List of my accounts on the web
 <http://yannlüthi.info/aboutme/> <http://www.perceive.net/schemas/relationship/myaccount> <http://youtube.com/user/yannluethi>
 
