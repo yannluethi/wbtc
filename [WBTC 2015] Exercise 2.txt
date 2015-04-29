@@ -1,5 +1,3 @@
-# wbtc
-
 2 - RDF and SPARQL
 
 I used the Turtle Syntax to create RDF triple statemanents.
