@@ -2,16 +2,21 @@
 
 I used the Turtle Syntax to create RDF triple statemanents.
 
-@prefix rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 @prefix foaf : <http://xlmns.com/foaf/0.1/> 
-@prefix friends : <http://xmlns.com/foaf/0.1/knows> 
-@prefix education : <http://xmlns/education/1.0/> 
-@prefix workexperience : <http://xmlns/foaf/0.1/work> 
+@prefix account : <http://xmlns.com/foaf/0.1/account>
+@prefix friends : <http://xmlns.com/foaf/0.1/friends>
+@prefix workexperience : <http://yannlüthi.info/aboutme/workexperience> 
+@prefix education : <http://xmlns.com/foaf/0.1/education> 
+@prefix interests : <http://xmlns.com/foaf/0.1/interests> 
+@prefix wikipedia : <http://en.wikipedia.org/wiki> .
 
-List of my accounts on the web
-<http://yannlüthi.info/aboutme/> <http://www.perceive.net/schemas/relationship/myaccount> <http://youtube.com/user/yannluethi>
+<http://yannlüthi.info/aboutme>
+rdf:type foaf:Person ;
+foaf:account <https://facebook.com/yann.luthi>, <http:youtube.com/yann.luthi>;
+foaf:friends <http://johnmayer.info>, <http://stevengerrard.info>
+foaf:workexperience "bkw", "lwb" ;
+foaf:education "lwb";
+foaf:interests wikipedia:Fussball, wikipedia:Musik;
 
-List of my relationships:
-List of my interests:
-List of accomplishments:
-http://www.w3.org/TR/turtle/#language-features
+This RDF souce is vali. It was validated by the W3C RDFa Validator.
