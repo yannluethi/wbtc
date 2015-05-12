@@ -1,19 +1,20 @@
 3.1 - RDF
 
 @base <http://yannlüthi.info/aboutme>
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>
-@prefix wikipedia : <http://en.wikipedia.org/wiki/>
-@prefix dbpedia : <http://dbpedia.org/page/>
+@prefix dbpedia: <http://dbpedia.org/page/>
+@prefix wikipedia: <http://en.wikipedia.org/wiki/>
 
-rdf:type foaf:Person ;
-foaf:name "Luca Rozza"@de ;
+
+rdf:type foaf:Person;
+foaf:name "Yann Lüthi"@de;
+foaf:knows "matthias#me" ;
+foaf:knows "luca#me" ;
 foaf:knows "can#me" ;
-foaf:knows "yann#me" ;
-foaf:knows "luka#me" ;
-foaf:interest dbpedia:Bern, dbpedia:Sport ;
-foaf:mbox <mailto:luca.rozza@students.bfh.ch> ;
+foaf:interest dbpedia:Fussball, dbpedia:Musik;
+foaf:mbox <mailto:yann.luethi@students.bfh.ch> ;
 foaf:document <http://wbtc.bfh.ch/2015/linked-data> ;
 
 3.2 - SPARQL
