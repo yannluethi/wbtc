@@ -1,5 +1,7 @@
 4 - Interesting SPARQL Queries
 
+Johan Christian Fabricius----------------------------------------
+
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
 PREFIX dbpprop: <http://dbpedia.org/property/>
 PREFIX dbres: <http://dbpedia.org/resource/>
@@ -9,3 +11,23 @@ SELECT ?y WHERE {
  }
 
 limit 10
+
+
+Companys---------------------------------------------------------
+
+select ?company
+where {
+  ?company a dbpedia-owl:Company
+}
+order by ?company
+limit 10
+
+
+Find 50 Spacecraft-----------------------------------------------
+
+PREFIX space: <http://purl.org/net/schemas/space/>
+SELECT ?craft
+{
+  ?craft a space:Spacecraft
+}
+LIMIT 50
