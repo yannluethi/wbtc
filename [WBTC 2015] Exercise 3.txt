@@ -23,18 +23,23 @@ foaf:document <http://wbtc.bfh.ch/2015/linked-data> ;
 
 3.2 - SPARQL
 
-SELECT ?CentralGovernmentDebtTotalPercentageOfGDP
-WHERE{
-?p ?a country:CH.
-?p sdmx-measure:obsValue ?CentralGovernmentDebtTotalPercentageOfGDP.
-?p ?x year:2008.
-?p property:indicator indicator:GC.DOD.TOTL.GD.ZS.
-}
+PREFIX year: <http://reference.data.gov.uk/id/year/>
+PREFIX property: <http://worldbank.270a.info/property/>
+PREFIX indicator: <http://worldbank.270a.info/classification/indicator/>
+PREFIX country: <http://worldbank.270a.info/classification/country/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+PREFIX sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT ?refPeriod ?obsValue
 
 
-PREFIX dbo: <http://dbpedia.org/ontology/>
-PREFIX dbr: <http://dbpedia.org/resource/>
-SELECT ?PopulationCensusValueForSwitzerland
 WHERE {
-    dbr:Switzerland dbpprop:populationCensus ?PopulationCensusValueForSwitzerland.
+        ?observation a qb:Observation ;
+            property:indicator indicator:GC.DOD.TOTL.GD.ZS ;
+            sdmx-measure:obsValue ?obsValue ;            
+            sdmx-dimension:refPeriod ?refPeriodURI ;
+            sdmx-dimension:refArea ?countryURI ;
 }
