@@ -1,0 +1,38 @@
+# wbtc
+Web- and Internettechnologies (FS15)
+
+3.1
+
+@base <http://lrozza.info>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>
+@prefix wikipedia : <http://en.wikipedia.org/wiki/>
+@prefix dbpedia : <http://dbpedia.org/page/>
+
+rdf:type foaf:Person ;
+foaf:name "Luca Rozza"@de ;
+foaf:knows "can#me" ;
+foaf:knows "yann#me" ;
+foaf:knows "luka#me" ;
+foaf:interest dbpedia:Bern, dbpedia:Sport ;
+foaf:mbox <mailto:luca.rozza@students.bfh.ch> ;
+foaf:document <http://wbtc.bfh.ch/2015/linked-data> ;
+
+3.2
+
+SELECT ?CentralGovernmentDebtTotalPercentageOfGDP
+WHERE{
+?p ?a country:CH.
+?p sdmx-measure:obsValue ?CentralGovernmentDebtTotalPercentageOfGDP.
+?p ?x year:2008.
+?p property:indicator indicator:GC.DOD.TOTL.GD.ZS.
+}
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+SELECT ?PopulationCensusValueForSwitzerland
+WHERE {
+    dbr:Switzerland dbpprop:populationCensus ?PopulationCensusValueForSwitzerland.
+}
