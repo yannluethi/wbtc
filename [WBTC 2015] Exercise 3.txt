@@ -6,14 +6,18 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>
 @prefix dbpedia: <http://dbpedia.org/page/>
 @prefix wikipedia: <http://en.wikipedia.org/wiki/>
+@prefix moodle : <http://moodle.bfh.ch/course/view.php?>
 
 
 rdf:type foaf:Person;
-foaf:name "Yann Lüthi"@de;
-foaf:knows "matthias#me" ;
-foaf:knows "luca#me" ;
-foaf:knows "can#me" ;
-foaf:interest dbpedia:Fussball, dbpedia:Musik;
+foaf:firstname "Yann"@de;
+foaf:lastname "Lüthi"@de;
+foaf:knows "matthias#me";
+foaf:knows "Hans#me";
+foaf:knows "Fritz#me";
+foaf:knows "Gerthrud#me";
+
+foaf:interest wikipedia:Fussball, wikipedia:Musik;
 foaf:mbox <mailto:yann.luethi@students.bfh.ch> ;
 foaf:document <http://wbtc.bfh.ch/2015/linked-data> ;
 
